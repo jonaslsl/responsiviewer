@@ -1,3 +1,23 @@
+.resize {
+  background-color: #29e;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 2px;
+
+  /* The width is set in the element's HTML
+   * so that it can be read by the resizing
+   * function
+   */
+}
+
+.resize-container {
+  width: 100%;
+  height: 240px;
+}
 
 // injector
 // endinjector
