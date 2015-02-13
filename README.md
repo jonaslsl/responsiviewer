@@ -25,6 +25,7 @@ Made with:
 - Autorefresh button
 - Add draggable button 
 - Add close button
+- Create first release
 - Generate a site for this project
 - Add titles with options (pre-set screen title and/or width/height in pixels)
 - Add a hide titles button
