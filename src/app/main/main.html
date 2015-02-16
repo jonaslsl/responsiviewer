@@ -9,10 +9,12 @@
         <button type="submit" class="btn btn-default">Load url</button>
       </div>
     </form>
+    <button type="submit" class="btn btn-default" ng-click="add()">Add screen</button>
   </div>
   <hr>
 </div>
 <div element-resizable element-draggable>
-<div class="resize-container">
-  <iframe  ng-src="{{url | trustAsResourceUrl}}" class="resize draggable" style="width: 450px; height: 450px" ></iframe>
+  <div class="resize-container" ng-repeat="screen in screens">
+    <iframe  ng-src="{{screen.url | trustAsResourceUrl}}" class="resize draggable" style="width: 450px; height: 450px" ></iframe>
+  </div>
 </div>

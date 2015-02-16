@@ -18,12 +18,13 @@ Made with:
 - Load one page with resizable and draggable interact
 - Load many pages with resizable and draggable interact
 - Bind of url 
+- 'Add screen' button
 
 ###Backlog
-- Add screen button
 - Autorefresh button
 - Add draggable button 
 - Add close button
+- Presets screens for most commom screen sizes (ipad, iphone, galaxy)
 - Create first release
 - Finish README
   - add code snippets
@@ -31,12 +32,13 @@ Made with:
   - list of authors
   - instructions to submit bugs, feature requests, submit patches, join mailing list, get announcements, or join the 
   user or dev community in other forms
+- Bring to front and send to back options
 - Check security risks of use filter for $sce.trustAsResourceUrl (there's no interation with any server)
 - Generate a site for this project
 - Add titles with options (pre-set screen title and/or width/height in pixels)
 - Add a hide titles button
-- Presets screens for most commom screen sizes (ipad, iphone, galaxy)
 - Styling
+- Hide iframes and display blank blocks for better cpu usage while dragging or rezising
 - Load many pages in one side
 - Add some themes for better UI
 - Gulp auto clean routines
