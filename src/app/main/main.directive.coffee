@@ -13,8 +13,8 @@ rv.directive 'elementDraggable', ->
           target = event.target
           x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
           y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
-          //$('.is-selected').removeClass 'is-selected'
-          //target.classList.add "is-selected"
+          #//$('.is-selected').removeClass 'is-selected'
+          #//target.classList.add "is-selected"
           target.style.webkitTransform =
           target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
           target.setAttribute 'data-x', x
@@ -29,8 +29,8 @@ rv.directive 'elementResizable', ->
       .resizable(true)
       .on 'resizemove' , (event) ->
         target = event.target
-        // $('.is-selected').removeClass 'is-selected'
-        // target.classList.add "is-selected"
+        #// $('.is-selected').removeClass 'is-selected'
+        #// target.classList.add "is-selected"
         newWidth  = parseFloat(target.style.width ) + event.dx
         newHeight = parseFloat(target.style.height) + event.dy
         target.style.width  = newWidth + 'px'

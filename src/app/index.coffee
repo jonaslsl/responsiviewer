@@ -6,4 +6,7 @@ angular.module "responsiviewer", ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSaniti
         controller: "MainCtrl"
       .otherwise
         redirectTo: "/"
+  .config( ($sceDelegateProvider) ->
+    $sceDelegateProvider.resourceUrlWhitelist(['self','http://www.uol.com.br/'])
+  )
 
