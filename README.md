@@ -9,6 +9,9 @@ Made with:
 - Still working on first version
 - Testing on Chrome Version 40.0.2214.111 (64-bit)
 
+##Licensing
+MIT
+
 ##Installing
 - bower install
 - npm install
@@ -19,19 +22,22 @@ Made with:
 - Load many pages with resizable and draggable interact
 - Bind of url 
 - 'Add screen' button
+- Autorefresh button
 
 ###Backlog
-- Autorefresh button
 - Add draggable button 
 - Add close button
 - Presets screens for most commom screen sizes (ipad, iphone, galaxy)
 - Create first release
+- Add gitFlow
 - Finish README
   - add code snippets
   - copyright and licensing information
   - list of authors
   - instructions to submit bugs, feature requests, submit patches, join mailing list, get announcements, or join the 
   user or dev community in other forms
+- 'close all screens' button
+- Toggle menu
 - Bring to front and send to back options
 - Check security risks of use filter for $sce.trustAsResourceUrl (there's no interation with any server)
 - Generate a site for this project
