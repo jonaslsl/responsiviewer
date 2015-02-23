@@ -37,12 +37,3 @@ rv.directive 'elementResizable', ->
         target.style.height = newHeight + 'px'
         return
     return
-
-rv.directive 'windowHeight', ->
-  restrict: 'AE'
-  link: (scope, element, attrs) ->
-    $(window).on("load resize", ->
-      $('.vertical').css('height' : $(window).height())
-    )
-    $(window).resize()
-    return
