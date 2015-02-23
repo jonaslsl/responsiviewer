@@ -4,8 +4,10 @@ angular.module "responsiviewer"
     timer = ''
     $scope.screens = []
     $scope.url = 'http://www.aldeiaco.com.br'
+    counter = 0
 
     $scope.screens.push({
+      id: counter
       url: $scope.url
     })
 
@@ -29,15 +31,12 @@ angular.module "responsiviewer"
     ]
 
     $scope.refresh = (t) ->
-
       timer = $interval( -> 
         $scope.load($scope.url)
         return
       t * 1000)
-
       if t == 0
         $interval.cancel(timer)
-
       return
     
     $scope.load = (url) ->
@@ -47,9 +46,16 @@ angular.module "responsiviewer"
       return
 
     $scope.add = ->
+      counter++
       $scope.screens.push({
+        id: counter
         url: $scope.url
       })
+
+    $scope.close = (id)->
+      angular.forEach $scope.screens, (s, s_i) ->
+        if s.id == id
+          $scope.screens.splice(s_i)
 
     return
 

@@ -23,10 +23,10 @@ MIT
 - Bind of url 
 - 'Add screen' button
 - Autorefresh button
+- Add close button
 
 ###Backlog
 - Add draggable button 
-- Add close button
 - Presets screens for most commom screen sizes (ipad, iphone, galaxy)
 - Create first release
 - Add gitFlow

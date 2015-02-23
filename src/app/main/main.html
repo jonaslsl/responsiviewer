@@ -18,9 +18,14 @@
   <hr>
 </div>
 <div class='container'>
-  <div class="row vertical" window-height>
+  <div class="row vertical" window-height element-resizable element-draggable>
     <div class='col-md-12'>
-        <iframe  element-resizable element-draggable ng-repeat="screen in screens" ng-src="{{screen.url | trustAsResourceUrl}}" class="resize draggable" style="width: 450px; height: 450px" ></iframe>
+      <div ng-repeat="screen in screens">
+        <div class="resize draggable col-md-4">
+          <button class="btn btn-default" ng-click="close(screen.id)">Close</button>
+          <iframe ng-src="{{screen.url | trustAsResourceUrl}}" style="width: 100%; height: 300px" ></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </div>
